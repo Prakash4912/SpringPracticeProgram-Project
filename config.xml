@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <!-- <bean id="hello" class="CoreSpring.CoreSpring.Hello">
+ <property name="msg"  value="Hello Spring.."></property>
+ </bean>-->
+ 
+ <bean class="CoreSpring.CoreSpring.Student" id="stud">
+  <property name="id" value =  "1"/>
+  <property name="name" value =  "Prakash"/>
+  <property name="address" value =  "Pune"/>
+ </bean>
+ 
+ <!--  <bean id="obj1" class="diwithconstruction.A">
+ <property name="a"  value="4"></property>
+ </bean>
+ 
+ <bean id="obj2" class="diwithconstruction.B">
+ <constructor-arg index="0" value="2"></constructor-arg>
+ <constructor-arg index="1" ref="obj1"></constructor-arg>
+ </bean>-->
+ 
+ 
+<!-- <bean id="obj1" class="diwithsetter.A">
+ <property name="a"  value="2"></property>
+ </bean>
+ 
+<bean id="obj2" class="diwithsetter.B">
+ <property name="b" value="3"></property>
+ <property name="obj" ref="obj1"></property>
+ </bean>
+ 
+ <bean id="obj1" class="diwithsetter.A">
+ <property name="a"  value="2"></property>
+ </bean>
+ 
+ <bean id="c" class="com.collection.Company">
+ <property name="name" value="TIAA"></property>
+ <property name="employees">
+ <list>
+ <bean id="e1" class="com.collection.Employee">
+ <property name="id" value="1"></property>
+ <property name="name" value="Shriya"></property>
+ <property name="Address" value="Pune"></property>
+ </bean>
+ 
+ <bean id="e2" class="com.collection.Employee">
+ <property name="id" value="2"></property>
+ <property name="name" value="Jimmy"></property>
+ <property name="Address" value="Abad"></property>
+ </bean>
+ 
+ <bean id="e3" class="com.collection.Employee">
+ <property name="id" value="3"></property>
+ <property name="name" value="Zeeya"></property>
+ <property name="Address" value="Surat"></property>
+ </bean>
+ </list>
+ </property>
+ </bean>-->
+ 
+ 
+ 
+ 
+ 
+<!--  <bean class="com.collection.CompanySet" id="c">
+<property value="TIAA" name="Wipro"/>
+<property name="employees">
+<set>
+<bean class="com.collection.Employee" id="e1">
+<property value="1" name="id"/>
+<property value="Shriya" name="name"/>
+<property value="Pune" name="Address"/>
+</bean>
+
+
+<bean class="com.collection.Employee" id="e2">
+<property value="3" name="id"/>
+<property value="Jimmy" name="name"/>
+<property value="Abad" name="Address"/>
+</bean>
+
+
+<bean class="com.collection.Employee" id="e3">
+<property value="2" name="id"/>
+<property value="Zeeya" name="name"/>
+<property value="Surat" name="Address"/>
+</bean>
+</set>
+</property>
+</bean>-->
+ 
+ </beans>
